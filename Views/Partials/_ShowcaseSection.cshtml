@@ -1,22 +1,22 @@
-﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
-<section class="showcase-selection">
+﻿@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+<section class="showcase-section">
     <div class="container">
         <div class="content-column">
-            <h1>We provide The Best Consulting Service</h1>
-            <p>Establish your visionnand value proposition och turn them into testable prototypes.</p>
+            <h1>@Model.Value("showcaseTitle")</h1>
+            <p>@Model.Value("showcaseDescription")</p>
             <div class="button-links">
                 <a class="btn-theme" href="@Model.Value("showcaseButtonUrl")">@Model.Value("showcaseButtonText")<i class="fa-solid fa-arrow-up-right"></i></a>
-                <a class="btn-theme" href="@Model.Value("showcaseButtonUrl")>@Model.Value("showcaseButtonText")<i class="fa-solid fa-arrow-up-right"></i></a>
+                <a class="btn-theme" href="service.html">Learn More<i class="fa-solid fa-arrow-up-right"></i></a>
             </div>
         </div>
         <div class="image-column">
             @{
-                var showcase = Model.Value<IPublishedContent>("");
-                if (showcase != null)
+                var showcaseImage = Model.Value<MediaWithCrops>("showcaseImage");
+                if (showcaseImage != null)
                 {
-                    IPublishedContent showcaseImage = showcase.Value<IPublishedContent>("showcaseImage")!;
-
-            <img src="showcaseImage.Url()" alt="@Model.Value("showcaseTitle")" >
+                    <img src="@showcaseImage.MediaUrl()" alt="@Model.Value("showcaseTitle")">
+         
                 }
                 }
         </div>
