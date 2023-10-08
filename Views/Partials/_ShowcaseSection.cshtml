@@ -10,7 +10,15 @@
             </div>
         </div>
         <div class="image-column">
-            <img src="@Model.Value("showcaseImage")" alt="@Model.Value("showcaseTitle")">
+            @{
+                var showcase = Model.Value<IPublishedContent>("");
+                if (showcase != null)
+                {
+                    IPublishedContent showcaseImage = showcase.Value<IPublishedContent>("showcaseImage")!;
+
+            <img src="showcaseImage.Url()" alt="@Model.Value("showcaseTitle")" >
+                }
+                }
         </div>
     </div>
 </section>
