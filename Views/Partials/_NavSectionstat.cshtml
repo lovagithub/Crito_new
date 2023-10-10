@@ -1,19 +1,4 @@
 ﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
-@using Umbraco.Cms.Core
-@using Umbraco.Cms.Core.Models.PublishedContent
-@using Umbraco.Cms.Core.Routing
-@using Umbraco.Extensions
-
-@inject IPublishedValueFallback PublishedValueFallback
-@inject IPublishedUrlProvider PublishedUrlProvider
-
-
-@{
-    var site = Model.Root();
-    var selection = Model.Root().Children.Where(x => x.IsVisible(PublishedValueFallback)).ToArray();
-}
-
-
 <section class="nav-section">
     <div class="container">
         <a href="/">
@@ -39,18 +24,10 @@
             </div>
             <div class="second-row">
                 <div class="navbar">
-                    <a class="@(Model.Id == site.Id ? "active": null)" href="@site.Url()">@site.Name</a>
-                    
-                    @if (selection?.Length > 0)
-                    {
-                        
-                            @foreach (var item in selection)
-                            {
-                            <a class="@(item.IsAncestorOrSelf(Model) ? "active": null)" href="@item.Url(PublishedUrlProvider)">@item.Name</a>                          
-                            }
-                       
-                    }
-
+                    <a class="active" href="/">Home</a>
+                    <a href="/service">Service</a>
+                    <a href="/news">News</a>
+                    <a href="/contact">Contact</a>
                 </div>
 
                 <a class="btn-theme" href="login.html">Login<i class="fa-solid fa-arrow-up-right"></i></a>
