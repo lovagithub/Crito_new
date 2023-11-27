@@ -295,37 +295,37 @@ main {
 .feature-section {
     padding: 60px 0;
 }
-    .feature-section .container .section-border {
+ .feature-section .container .section-title {
         margin: -50px -90px;
         padding: 80px 80px;
-        border: 1px solid rgba(25, 25, 25, 0.1);
+        border: 1px solid rgba(25, 25, 25, 0.1); 
     }
-    .feature-section .container .section-border .feature-grid {
+    .feature-section .container .feature-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
 }
-.feature-section .container .section-border .feature-grid .feature-learnmore {
+.feature-section .container .feature-grid .feature-learnmore {
     margin-right: 30%;
 }
-.feature-section .container .section-border .feature-grid .feature-learnmore h2 {
+.feature-section .container .feature-grid .feature-learnmore h2 {
         font-size: 45px;
         font-weight: 700;
         margin-bottom: 30px;
 }
-.feature-section .container .section-border .feature-grid .feature-learnmore a {
+.feature-section .container .feature-grid .feature-learnmore a {
         display: flex;
 }
-.feature-section .container .section-border .feature-grid .feature-boxes {
+.feature-section .container .feature-grid .feature-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
-.feature-section .container .section-border .feature-grid .feature-box i {
+.feature-section .container .feature-grid .feature-box i {
     font-size: 25px;
     margin-bottom: 20px;
 }
-.feature-section .container .section-border .feature-grid .feature-box h4 {
+.feature-section .container .feature-grid .feature-box h4 {
     font-size: 22px;
     font-weight: 700;
 }
