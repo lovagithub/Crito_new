@@ -4,4 +4,37 @@
 @{
 	Layout = "LayoutWithShowcase.cshtml";
 }
+<<<<<<< HEAD
 @await Html.PartialAsync("_BrandSection")
+=======
+
+<!-- header -->
+<header>
+    <img class="background-lines" src="images/background-effects/background-lines.svg" alt="no images1">
+    @await Html.PartialAsync("_NavSection")     
+    @await Html.PartialAsync("_ShowcaseSection")
+  
+</header>
+
+<main>
+    @await Html.PartialAsync("_BrandSection")
+</main>
+
+    <section class="feature-section">
+        <div class="container">
+            <div class="section-border">
+                <div class="section-title">@Model.Value("serviceFeaturesSectionTitle")</div>
+                     <div class="feature-grid">
+                       <div class="feature-learnmore">
+                            <h2>@Model.Value("serviceFeatureHeading")</h2>
+                            <a class="btn-theme" href="@Model.Value("serviceFeaturesButtonUrl")">@Model.Value("serviceFeaturesButtonText")<i class="fa-solig facebook-button arrow-up-right"></i></a>
+                       </div>
+                <div class="feature-boxes">
+                    <h2>Fetaure45</h2>
+                    <p> jhsdygfkawjhgrlakhglkalkrja</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+>>>>>>> 223bccffb64d6a86d6c94570fa16c75e6b086f9f
