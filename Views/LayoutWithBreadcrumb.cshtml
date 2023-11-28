@@ -3,6 +3,7 @@
 @{
 	Layout = null;
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,43 +13,28 @@
     <meta name="keywords" content="@Model.Value("pageKeyworks")">
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
     <title>@Model.Value("pageTitle") | Crito - Agency Service</title>
 </head>
-<<<<<<< HEAD
 
-<body>
-<div class="wrapper">
-    
-
-<header>
-    <img class="background-lines" src="images/background-effects/background-lines.svg" alt="no images1">
-    @await Html.PartialAsync("_NavSection")     
-    @await Html.PartialAsync("_BreadcrumbSection")
-=======
 <body>
 <div class="wrapper">
     
     <!-- header -->
 <header>
-    <img class="background-lines" src="images/background-effects/background-lines.svg" alt="no images1">
+    <img class="background-lines" src="~/images/background-effects/background-lines.svg" alt="no images1">
     @await Html.PartialAsync("_NavSection")     
-    @await Html.PartialAsync("_BredcrumbSection")
->>>>>>> 223bccffb64d6a86d6c94570fa16c75e6b086f9f
+    @await Html.PartialAsync("_BreadcrumbSection")
   
 </header>
 
 <main>
-<<<<<<< HEAD
+
 @RenderBody()
 </main>
 
-=======
 
-@RenderBody()
 
-</main>
->>>>>>> 223bccffb64d6a86d6c94570fa16c75e6b086f9f
 @await Html.PartialAsync("_FooterSection")
 </div>
     <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>

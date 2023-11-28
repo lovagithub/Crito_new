@@ -12,15 +12,11 @@
     <div class="container">
         <div class="breadcrumb">
              @foreach (var item in selection.OrderBy(x => x.Level))
-<<<<<<< HEAD
+
              {
                  <a href="@item.Url(PublishedUrlProvider)" class="m-3">@item.Name</a>
              }
-=======
-             (
-                 <a href="@item.Url(PublishedUrlProvider)">@item.Name</a>
-             )
->>>>>>> 223bccffb64d6a86d6c94570fa16c75e6b086f9f
+
             <span>@Model.Name</span>
         </div>
         <h2>@Model.Value("pageTitle")</h2>
