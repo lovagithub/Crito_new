@@ -316,16 +316,17 @@ main {
 .feature-section .container .section-border .feature-grid .feature-learnmore a {
         display: flex;
 }
-.feature-section .container .section-border .feature-grid .feature-boxes {
+.feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
-.feature-section .container .section-border .feature-grid .feature-box i {
+
+.feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box  i {
     font-size: 25px;
     margin-bottom: 20px;
 }
-.feature-section .container .section-border .feature-grid .feature-box h4 {
+.feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box h4 {
     font-size: 22px;
     font-weight: 700;
 }

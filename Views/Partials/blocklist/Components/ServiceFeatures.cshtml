@@ -1,8 +1,7 @@
 ﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
-    var content = (ContentModels.ServiceFeature)Model.Content;
-    
+    var content = (ContentModels.ServiceFeatures)Model.Content;
 }
 
 <div class="feature-box">
