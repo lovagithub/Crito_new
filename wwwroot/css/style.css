@@ -200,32 +200,33 @@ html, body {
         background-color: rgba(25, 25, 25);
 }
 
-    .item.pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-        .item.pagination .item-link {
-            color: #191919;
-            margin: 4px;
-            border: 1px solid rgba(25, 25, 25, 0.1);
-            border-radius: 5px 5px 5px 5px;
-            padding: 6px 16px;
-            font-size: 1em;
-            text-decoration: none;
-        }
+.item-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            .item.pagination .item-link.active, .item.pagination .item-link:hover {
-                background-color: #191919;
-                color: #FFFFFF;
-            }
+.item-pagination .item-link {
+    color: #191919;
+    margin: 4px;
+    border: 1px solid rgba(25, 25, 25, 0.1);
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px 16px;
+    font-size: 1em;
+    text-decoration: none;
+}
 
-            .item.pagination .item-link.link-prev {
+item-pagination .item-link active, .item.pagination .item-link:hover {
+    background-color: #191919;
+    color: #FFFFFF;
+}
+
+            .item-pagination .item-link.link-prev {
                 margin-right: 15px;
             }
 
-            .item.pagination .item-link.link-next {
+            .item-pagination .item-link.link-next {
                 margin-left: 15px;
             }
             /* header */
@@ -423,12 +424,7 @@ main {
                 grid-template-columns: repeat(2, 2fr);
                 gap: 20px; /* justera gapet mellan boxarna enligt dina önskemål */
             }
-/*        display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;  
-            
-        }
-*/
+
 
 .service-section .container .section-border .section-title .section-boxes .umb-block-list .service-boxes i {
     font-size: 25px;
@@ -729,7 +725,7 @@ main {
             margin: 30px 0 0 0;
         }
 
-        .team-section .container .team-members member p {
+        .team-section .container .team-members .member p {
         font-family: "Inter", sans-serif;
         font-size: 16px;
         font-weight: 500;
@@ -743,20 +739,24 @@ main {
                     padding: 60px 0 0px 0;
                     padding-bottom: 120px;
                 }
+
     .testimonial-section .container .section-border {
          margin: -50px -90px;
          padding: 120px 80px;
          background-color: #FFFFFF;
     }
+
         .testimonial-section .container .section-border .section-title {
             margin-bottom: 15px;
         }
+
         .testimonial-section .container .section-border h2 {
             font-family: "DM Sans", sans-serif;
             font-size: 45px;
             font-weight: 700;
             margin-bottom: 60px;
         }
+
         .testimonial-section .container .section-border .testimonials {
             display: flex;
             justify-content: space-around;
@@ -764,13 +764,16 @@ main {
             gap: 100px;
             margin-bottom: 40px;
         }
+
     .testimonial-section .container .section-border .testimonials .testimonial {
         text-align: left;
     }
+
         .testimonial-section .container .section-border .testimonials .testimonial .rating {
             margin: 20px 0;
             color: #F94D1C;
         }
+
         .testimonial-section .container .section-border .testimonials .testimonial .writer {
             text-align: left;
             align-items: center;
@@ -778,6 +781,7 @@ main {
             grid-template-columns: 90px 1fr;
             grid-template-areas: "img name" "img position"
         }
+
             .testimonial-section .container .section-border .testimonials .testimonial .writer img {
                 grid-area: img;
                 border-radius: 50%;
@@ -787,13 +791,15 @@ main {
                 object-fit: cover;
                 margin-top: 15px;
             }
+
             .testimonial-section .container .section-border .testimonials .testimonial .writer h5 {
                 grid-area: name;
                 font-family: "DM Sans", sans-serif;
-                font-size: 25px;
+                font-size: 22px;
                 font-weight: 700;
-                width: 30px;
+                width: 30px 0 0 0;
             }
+
             .testimonial-section .container .section-border .testimonials .testimonial .writer p {
                 grid-area: position;
                 font-family: "Inter", sans-serif;
@@ -801,7 +807,6 @@ main {
                 font-weight: 400;
                 color: #F94D1C;
             }
-
 
 .testimonial-section .container .section-border a {
     display: inline-block;
@@ -813,27 +818,32 @@ main {
     z-index: 0;
     padding: 60px 0 60px 0;
 }
+
     .article-section .container section-title {
         margin-bottom: 15px;
     }
+
     .article-section .container browse-news {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-bottom: 40px;
     }
+
         .article-section .container browse-news h2 {
             flex: 1;
             font-family: "DM Sans", sans-serif;
             font-size: 45px;
             font-weight: 700;
         }
+
     .article-section .container .articles {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         margin-bottom: 40px;
     }
+
         .article-section .container .articles .article {
             position: relative;
             text-decoration: none;
@@ -842,6 +852,7 @@ main {
             padding: 20px;
             transition: border 0.15s ease-in-out;
         }
+
             .article-section .container .articles .article .article-date {
                 position: absolute;
                 left: 30px;
@@ -854,38 +865,51 @@ main {
                 align-items: center;
                 flex-direction: column;
             }
+
                 .article-section .container .articles .article .article-date .day {
                     font-family: "DM Sans", sans-serif;
                     font-size: 22px;
                     font-weight: 700;
                     margin-bottom: -10px;
                 }
+
                 .article-section .container .articles .article .article-date .month {
                     font-family: "Inter", sans-serif;
                     font-size: 16px;
-                    font-weight: 400;
-                    
+                    font-weight: 400;                   
                 }
+
+            .article-section .container .articles .article img {
+                height: 230px;
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
             .article-section .container .articles .article .category {
                 font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-weight: 400;
                 margin-top: 20px;
             }
+
     .article-section .container .articles .article h5 {
         font-family: "DM Sans", sans-serif;
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 20px;
     }
+
     .article-section .container .articles .article p {
         font-family: "Inter", sans-serif;
         font-size: 16px;
         font-weight: 400;
     }
+
     .article_section .container .articles .article:hover {
         border: 1px solid rgba(25, 25, 25, 0.1);
     }
+
 .newsletter-section {
     position: relative;
     z-index: 0;
