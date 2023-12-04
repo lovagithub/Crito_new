@@ -45,7 +45,8 @@
 
 <section class="contactform-section">
 	<div class="container">
-		<h2>Leave us a message för any information.</h2>
+		<h2>Leave us a message </h2>
+		<h2>för any information.</h2>
 		@using (Html.BeginUmbracoForm("Index", "Contacts", FormMethod.Post))
 		{
 
@@ -61,6 +62,8 @@
 	</div>
 </section>
 
-<section class="googlemaps-section"> 
-    <iframe clss="google-maps" src="@Model.Value("googleMapsUrl")" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section class="googlemaps-section">
+	<iframe class="google-maps" src="@Model.Value("googleMapsUrl")" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+
 </section>

@@ -996,9 +996,12 @@ main {
             .contactinfo-section .container .infobox p {
                 margin: 0;
             }
+
 .contactform-section {
     padding: 80px 0 0 0;
 }
+
+
 .contactform-section .container {
     color: #191919;
     background-color: #F0EFE9;
@@ -1009,7 +1012,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+/*
     .contactform-section .container h2 {
         font-family: "DM Sans", sans-serif;
         font-size: 45px;
@@ -1048,16 +1051,41 @@ main {
     .contactform_section .container form button {
         margin-top: 20px;
     }
-.googlemaps-section {
-    padding: 80px 0 0 0;
+*/
+
+/* Общие стили для контактной формы */
+
+
+
+
+/* Стили для полей ввода */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Занимать 100% ширины контейнера */
+    padding: 10px; /* Внутренние отступы */
+    margin-bottom: 15px; /* Внешние отступы снизу */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 25px; /* Скругление углов */
+    box-sizing: border-box; /* Учитывать границу внутри ширины и высоты */
 }
 
-    .googlemaps-section google-maps {
-        width: 100%;
-        height: 620px;
-        border: none;
-    }
+textarea {
+    height: 150px; /* Высота для textarea */
+}
 
+
+/* Стили для сообщения об ошибке валидации */
+.validation-summary-errors {
+    color: red; /* Цвет текста */
+    margin-bottom: 15px; /* Внешние отступы снизу */
+}
+
+/* Стили для сообщений об успешной отправке формы (если используется) */
+.success-message {
+    color: green; /* Цвет текста */
+    margin-top: 15px; /* Внешние отступы сверху */
+}
 .articleitem-section {
     position: relative;
     z-index: 0;
@@ -1113,6 +1141,74 @@ main {
                     border-radius: 25px;
                     margin-right: 12px;
                 }
+
+.googlemaps-section {
+    padding: 80px 0 0 0;
+}
+
+.google-maps {
+    width: 100%;
+    height: 620px;
+    border: none;
+}
+       
+    .contact-form {
+                    margin-top: 60px;
+                    margin-bottom: 60px;
+                }
+                .contact-form .container {
+                    max-width: 1110px;
+                
+                }
+                .contact-form h2 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                
+                .contact-form form {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 40px;
+                }
+                .contact-form form input {
+                    width: 100%;
+                    padding: 18px 20px;
+                    border: 1px solid var(--color-light-gray);
+                }
+                
+                .contact-form form .textarea {
+                    grid-column: 1 / -1;
+                }
+                .contact-form form textarea {
+                    width: 100%; 
+                    padding: 18px 20px;
+                    border: 1px solid var(--color-light-gray);
+                    height: 140px;
+                    resize: none;
+                }
+                
+                .contact-form form .error {
+                    color: var(--color-theme);
+                    border: 1px solid var(--color-theme);
+                }
+                
+                .contact-form form .errorMessage {
+                    margin-top: 5px;
+                    color: var(--color-theme);
+                    font-size: 0.8em;
+                
+                }
+                .contact-form form button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-align: left;
+                    border: none;
+                    font-weight: 600;
+                    transition: all;
+                }
+                
 
                 footer {
                     background-color: #0E1021;

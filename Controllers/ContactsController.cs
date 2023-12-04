@@ -20,17 +20,17 @@ namespace Crito.Controllers
 
 
 			[HttpPost]
-		public async Task<IActionResult> Index(ContactForm contactForm)
+		public IActionResult Index(ContactForm contactForm)
 			{
 				if (!ModelState.IsValid) 
 					return CurrentUmbracoPage();
 
-			using var mail = new MailService("no-reply@crito.com", "smpt.websupport.se", 465, "lova.juhlin.jobb1@outlook.com", "BytMig123!");
+			using var mail = new MailService("no-reply@crito.com", "smpt.websupport.se", 465, "contact@crito.com", "BytMig123!");
 
-			await mail.SendAsync(contactForm.Email, "Your request war recived", "Hi your request war recived and vi will be in contact with you as soon as posible");
+			mail.SendAsync(contactForm.Email, "Your request war recived", "Hi your request war recived and vi will be in contact with you as soon as posible").ConfigureAwait(false);
 			
 		
-			await mail.SendAsync("lova.juhlin.jobb1@outlook.com", $"{contactForm.Name} send a contsct request.", contactForm.Message);
+			mail.SendAsync("info@crito.com", $"{contactForm.Name} send a contsct request.", contactForm.Message).ConfigureAwait(false);
 
 				return LocalRedirect(contactForm.RedirectUrl ?? "/");
 					
