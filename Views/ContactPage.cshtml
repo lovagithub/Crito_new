@@ -46,7 +46,9 @@
 <section class="contactform-section">
 	<div class="container">
 		<h2>Leave us a message för any information.</h2>
-		<form asp-controller="Contacts" asp-action="Index" method="post" noValidate>
+		@using (Html.BeginUmbracoForm("Index", "Contacts", FormMethod.Post))
+		{
+
 			<div asp-validation-summary="ModelOnly"></div>
 			<input asp-for="@contactForm.Name" type="text" placeholder="Name*" />
 			<input asp-for="@contactForm.Email" type="email" placeholder="Email*" />
@@ -55,7 +57,7 @@
 			<div class="d-grid">
 				<button type="submit" class="btn-theme">Send Message<i class="fa-solid fa-arrow-up-right"></i></button>
 			</div>
-		</form>
+	}
 	</div>
 </section>
 

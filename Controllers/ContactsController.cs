@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Crito.Models;
+using Crito.Services;
+using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Bcpg.OpenPgp;
 using Umbraco.Cms.Core.Cache;
 using Umbraco.Cms.Core.Logging;
 using Umbraco.Cms.Core.Routing;
@@ -17,12 +20,20 @@ namespace Crito.Controllers
 
 
 			[HttpPost]
-			public IActionResult Index()
+		public async Task<IActionResult> Index(ContactForm contactForm)
 			{
 				if (!ModelState.IsValid) 
 					return CurrentUmbracoPage();
 
-				return RedirectToCurrentUmbracoPage();
+			using var mail = new MailService("no-reply@crito.com", "smpt.websupport.se", 465, "lova.juhlin.jobb1@outlook.com", "BytMig123!");
+
+			await mail.SendAsync(contactForm.Email, "Your request war recived", "Hi your request war recived and vi will be in contact with you as soon as posible");
+			
+		
+			await mail.SendAsync("lova.juhlin.jobb1@outlook.com", $"{contactForm.Name} send a contsct request.", contactForm.Message);
+
+				return LocalRedirect(contactForm.RedirectUrl ?? "/");
+					
 			}		
 		}
 	}
