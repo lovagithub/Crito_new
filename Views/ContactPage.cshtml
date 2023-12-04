@@ -1,9 +1,13 @@
-﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+﻿@using Crito.Models
+@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContactPage>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
 	Layout = "LayoutWithBreadcrumb.cshtml";
+	var contactForm = new Crito.Models.ContactForm();
 }
+
+
 <section class="contactinfo-section">
 	<div class="container">
 		<div class="infobox">
@@ -41,14 +45,15 @@
 
 <section class="contactform-section">
 	<div class="container">
-		<h2></h2>
-		<form asp-controller="" asp-action="" method="post" novalidate>
+		<h2>Leave us a message för any information.</h2>
+		<form asp-controller="Contacts" asp-action="Index" method="post" noValidate>
 			<div asp-validation-summary="ModelOnly"></div>
-			<input asp-for="" type="text" placeholder="Name" />
-			<input asp-for="" type="email" placeholder="Email" />
-			<textarea asp-for="" placeholder="new Message"></textarea>
+			<input asp-for="@contactForm.Name" type="text" placeholder="Name*" />
+			<input asp-for="@contactForm.Email" type="email" placeholder="Email*" />
+			<textarea asp-for="@contactForm.Message" placeholder="New Message*"></textarea>
+	
 			<div class="d-grid">
-				<button type="submit" class="btn-theme">Send Massage<i class="-up-right"></i></button>
+				<button type="submit" class="btn-theme">Send Message<i class="fa-solid fa-arrow-up-right"></i></button>
 			</div>
 		</form>
 	</div>

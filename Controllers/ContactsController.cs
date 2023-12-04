@@ -9,20 +9,22 @@ using Umbraco.Cms.Web.Website.Controllers;
 
 namespace Crito.Controllers
 {
-	public class ContactsController : SurfaceController
-	{
-		public ContactsController(IUmbracoContextAccessor umbracoContextAccessor, IUmbracoDatabaseFactory databaseFactory, ServiceContext services, AppCaches appCaches, IProfilingLogger profilingLogger, IPublishedUrlProvider publishedUrlProvider) : base(umbracoContextAccessor, databaseFactory, services, appCaches, profilingLogger, publishedUrlProvider)
+		public class ContactsController : SurfaceController
 		{
+			public ContactsController(IUmbracoContextAccessor umbracoContextAccessor, IUmbracoDatabaseFactory databaseFactory, ServiceContext services, AppCaches appCaches, IProfilingLogger profilingLogger, IPublishedUrlProvider publishedUrlProvider) : base(umbracoContextAccessor, databaseFactory, services, appCaches, profilingLogger, publishedUrlProvider)
+			{
+			}
+
+
+			[HttpPost]
+			public IActionResult Index()
+			{
+				if (!ModelState.IsValid) 
+					return CurrentUmbracoPage();
+
+				return RedirectToCurrentUmbracoPage();
+			}		
 		}
-
-
-		[HttpPost]
-		public IActionResult Index()
-		{
-			if (!ModelState.IsValid) 
-				return CurrentUmbracoPage();
-
-			return RedirectToCurrentUmbracoPage();
-		}		
 	}
-}
+	
+
