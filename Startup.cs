@@ -1,3 +1,7 @@
+using Crito.Contexts;
+using Crito.Services;
+using Microsoft.EntityFrameworkCore;
+
 namespace Crito
 {
     public class Startup
@@ -28,7 +32,9 @@ namespace Crito
         /// For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940.
         /// </remarks>
         public void ConfigureServices(IServiceCollection services)
-        {
+		{
+			services.AddDbContext<DataContext>(x => x.UseSqlite(_config.GetConnectionString("SqliteDB")));
+			services.AddScoped<SubscriberService>();
             services.AddUmbraco(_env, _config)
                 .AddBackOffice()
                 .AddWebsite()

@@ -397,10 +397,10 @@ main {
     margin-bottom: 20px;
 }
 
-.feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box h4 {
-    font-size: 22px;
-    font-weight: 700;
-}
+    .feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box h4 {
+        font-size: 22px;
+        font-weight: 700;
+    }
 
 .service-section {
     padding: 60px 0;
@@ -421,7 +421,7 @@ main {
             .service-section .container .section-border .section-title .umb-block-list .service-boxes {
                 display: grid;
                 grid-template-columns: repeat(2, 2fr);
-                gap: 20px; /* justera gapet mellan boxarna enligt dina önskemål */
+                gap: 20px; 
             }
 
 
@@ -434,6 +434,7 @@ main {
                 font-size: 22px;
                 font-weight: 700;
             }
+
 
 .about-section {
     padding: 60px 0;
