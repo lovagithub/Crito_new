@@ -39,21 +39,21 @@ html, body {
 }
 
 .btn-dark {
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: inline-flex;
     text-decoration: none;
     background-color: #191919;
     border: 1px solid #191919;
     color: #FFFFFF;
-    font-weight: 500;
-    padding: 8px 22px;
+    font-weight: 600;
+    padding: 15px 30px;
     border-radius: 25px;
     transition: background 0.15s ease-in-out, border 0.15s ease-in-out;
 }
 
 .btn-dark i {
-    margin-left: 10px;
+    margin-left: 8px;
     font-size: 0.9em;
 }
 
@@ -137,19 +137,38 @@ html, body {
     color: #191919;
 }
 
-.section-title {
-    font-family: "Inter", sans-serif;
-    color: #8af91c;
-    font-size: 18px;
-    font-weight: 500;
+.center-context {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.background-lines {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
+.section-title {
+    /*  font-family: "Inter", sans-serif;
+    color: #8af91c;
+    font-size: 18px;
+    font-weight: 500;  */
+    padding-top: 120px;
+    padding-bottom: 90px;
 }
+    .section-title p {
+        color: #f9401C;
+        margin-bottom: 10px;
+        
+    }
+    .section-title h2 {
+        color: #191919;
+        font-family: "DM Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .background-lines {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 
 .background-lines-right {
     position: absolute;
@@ -679,13 +698,56 @@ main {
                     border: 1px solid rgba(25, 25, 25, 0.1);
                 }
 
-
-.team-section {
-    background-color: #F00082;
-    position: relative;
-    z-index: 0;
-    padding: 60px 0 60px 0;
+.project-and-case .container .center-context {
+        margin-top: 50px;
+        margin-bottom: 90px;
 }
+.project-and-case .container .section-title {
+    text-align: center;
+}
+.project-and-case .container .project-and-cases {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+    .project-and-case .container .project-and-cases img {
+        height: 307px;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .project-and-case .container .project-and-cases h3 {
+        color: #191919;
+        font-family: "DM Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 16px;
+        padding-top: 35px;
+        border-bottom: 1px solid #d4d9d3;
+    }
+        .project-and-case .container .project-and-cases a {
+            padding: 15px;
+            display: block;
+            text-align: right;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #191919;
+            text-decoration: none;
+
+        }
+            .project-and-case .container .project-and-cases i {
+                margin-left: 3px;
+            }
+
+            .team-section {
+                background-color: #F00082;
+                position: relative;
+                z-index: 0;
+                padding: 60px 0 60px 0;
+            }
 
     .team-section .container .section-title {
         margin-bottom: 15px;

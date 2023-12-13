@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Crito.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Crito.Models
 {
@@ -11,13 +12,9 @@ namespace Crito.Models
 		public string Name { get; set; } = null!;
 			
 		
-
 			public string Message { get; set; } = null!;
 
 			public string? RedirectUrl { get; set; } = "/";
-
-
-		
-
+	
 	}
 }
