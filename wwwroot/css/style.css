@@ -365,11 +365,11 @@ main {
         left: 70px;
     }
 
-.brands.section {
+.brands-section {
     padding: 60px 0;
 }
 
-    .brands.section .container {
+    .brands-section .container {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -423,36 +423,41 @@ main {
 
 .service-section {
     padding: 60px 0;
+   
 }
-    .service-section .container {
+
+.service-section .container {
         display: flex;
         justify-content: center;
-        display: grid;
-        
+      
     }
 
-        .service-section .container .section-border {
+.service-section .container .section-border {          
             margin: -50px -90px;
             padding: 80px 80px;
             border: 1px solid rgba(25, 25, 25, 0.1);
         }
 
-            .service-section .container .section-border .section-title .umb-block-list .service-boxes {
-                display: grid;
-                grid-template-columns: repeat(2, 2fr);
-                gap: 20px; 
-            }
+    .service-section .container .section-border .umb-block-list .service-boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 
 
-.service-section .container .section-border .section-title .section-boxes .umb-block-list .service-boxes i {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
+    .service-section .container .section-border .umb-block-list .service-boxes  i{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
 
-            .service-section .container .section-border .section-title .section-boxes .umb-block-list .service-boxes h4 {
-                font-size: 22px;
-                font-weight: 700;
-            }
+    .service-section .container .section-border .umb-block-list .service-boxes h2 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .service-section .container .section-border .umb-block-list .service-boxes a {
+        font-size: 22px;
+        font-weight: 700;
+    }
 
 
 .about-section {
@@ -572,12 +577,13 @@ main {
         display: flex;
         justify-content: center; 
     }
+   
 
-.chooseus-section {
-    position:relative;
-    z-index: 0;
-    padding: 60px 0 0 0;
-}
+        .chooseus-section {
+            position: relative;
+            z-index: 0;
+            padding: 60px 0 0 0;
+        }
     .chooseus-section .container {
         display: flex;
         justify-content: space-between;
