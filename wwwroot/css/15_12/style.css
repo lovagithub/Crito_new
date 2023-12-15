@@ -11,16 +11,18 @@ html, body {
     height: 100dvh;
     display: flex;
     flex-direction: column;
-}
-
+} 
+    
 .btn-theme {
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    background-color: #F9D783;
-    border: 1px solid #F9D783;
+    background-color: #ffd800;
+    border: 1px solid #F90783;
     color: #191919;
-    font-weight: 600;
-    padding: 12px 25px;
+    font-weight: 500;
+    padding: 8px 22px;
     border-radius: 25px;
     transition: background 0.15s ease-in-out, border 0.15s ease-in-out;
 }
@@ -428,45 +430,39 @@ main {
         border: 1px solid rgba(25, 25, 25, 0.1);
     }
 
-        .choose-section .container .section-border .project-and-cases {
+        .choose-section .container .section-border .feature-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0px;
         }
 
-            .choose-section .container .section-border .project-and-cases .feature-learnmore {
+            .choose-section .container .section-border .feature-grid .feature-learnmore {
                 margin-right: 30%;
             }
-                .choose-section .container .section-border .project-and-cases .feature-learnmore img {
-                    height: 307px;
-                    width: 100%;
-                    -o-object-fit: cover;
-                    object-fit: cover;
-                }
 
-
-                .choose-section .container .section-border .project-and-cases .feature-learnmore h2 {
+                .choose-section .container .section-border .feature-grid .feature-learnmore h2 {
                     font-size: 45px;
                     font-weight: 700;
                     margin-bottom: 30px;
+                   
                 }
 
-                .choose-section .container .section-border .project-and-cases .feature-learnmore a {
+                .choose-section .container .section-border .feature-grid .feature-learnmore a {
                     display: flex;
                 }
 
-            .choose-section .container .section-border .project-and-cases .feature-boxes .umb-block-list {
+            .choose-section .container .section-border .feature-grid .feature-boxes .umb-block-list {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 50px;
             }
 
-                .choose-section .container .section-border .project-and-cases .feature-boxes .umb-block-list .feature-box i {
+                .choose-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box i {
                     font-size: 25px;
                     margin-bottom: 20px;
                 }
 
-                .choose-section .container .section-border .project-and-cases .feature-boxes .umb-block-list .feature-box h2 {
+                .choose-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box h2 {
                     font-size: 22px;
                     font-weight: 700;
                 }
@@ -646,10 +642,9 @@ main {
             font-size: 45px;
             font-weight: 700;
             margin-bottom: 45px;
-            
         }
         .chooseus-section .container .content-column {
-            flex: 2;
+            flex: 1;
         }
             .chooseus-section .container .content-column ul {
                 margin: 0;
@@ -683,12 +678,10 @@ main {
                         font-size: 16px;
                         font-weight: 400;
                         grid-area: text;
-                        color: #191919;
                     }
             .chooseus-section .container .image-column {
-                flex: 1;
+                flex: 2;
                 text-align: right;
-                background-color: #F0EFE9;
             }
                 .chooseus-section .container .image-column img {
                     width: 645px;
@@ -696,52 +689,6 @@ main {
                     -o-object-fit: contain;
                     object-fit: contain;
                 }
-
-.repair-section {
-    position: relative;
-    z-index: 0;
-    padding: 10px 0 0 0;
-}
-
-    .repair-section .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-        .repair-section .container .section-title {
-            margin-bottom: 15px;
-        }
-
-        .repair-section .container h2 {
-            font-family: "DM Sans", sans-serif;
-            font-size: 55px;
-            font-weight: 700;
-            margin-bottom: 45px;
-        }
-        .repair-section .container h5 {
-            font-family: "DM Sans", sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-            margin-bottom: 45px;
-        }
-
-        .repair-section .container .content-column {
-            flex: 2;
-        }
-
-
-        .repair-section .container .image-column {
-            flex: 1;
-            text-align: left;
-            
-        }
-            .repair-section .container .image-column img {
-                width: 745px;
-                height: 605px;
-                -o-object-fit: contain;
-                object-fit: contain;
-            }
-
 .project-section {
     position: relative;
     z-index: 0;
@@ -847,12 +794,12 @@ main {
                 margin-left: 3px;
             }
 
-.team-section {
-    background-color: #F9D783;
-    position: relative;
-    z-index: 0;
-    padding: 60px 0 60px 0;
-}
+            .team-section {
+                background-color: #F00082;
+                position: relative;
+                z-index: 0;
+                padding: 60px 0 60px 0;
+            }
 
     .team-section .container .section-title {
         margin-bottom: 15px;
@@ -885,7 +832,7 @@ main {
             object-fit: cover;
         }
 
-        .team-section .container .team-members .member h5 {
+        .team-section .container .team-members member h5 {
             font-family: "DM Sans", sans-serif;
             font-size: 22px;
             font-weight: 700;
@@ -1220,9 +1167,6 @@ main {
         margin-top: 20px;
     }
 */
-
-
-
 
 /* Общие стили для контактной формы */
 

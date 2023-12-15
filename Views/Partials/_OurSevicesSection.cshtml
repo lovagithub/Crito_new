@@ -11,12 +11,13 @@
             <div class="section-border">
                 <div class="section-title">@Model.Value("ourServicesSectionsTitle")</div>
                 <h2>@Model.Value("ourServicesSectionsHeading")</h2>
+             
                      <div class="service-boxes">
                          @Html.GetBlockListHtml(Model.OurServices)
                      </div>
                      <div class="browse-services">
                          <a class="btn-dark" href="@Model.Value("ourServicesSectionsButtonUrl")">@Model.Value("ourServicesSectionsButtonText")<i class="fa-solid fa-arrow-up-right"></i></a>
                      </div>
-            </div>
+               </div>
          </div>
     </section>
