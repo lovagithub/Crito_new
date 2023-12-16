@@ -142,10 +142,10 @@ html, body {
 }
 
 .section-title {
-    /*  font-family: "Inter", sans-serif;
-    color: #8af91c;
+    font-family: "Inter", sans-serif;
+    color: #f9401C;
     font-size: 18px;
-    font-weight: 500;  */
+    font-weight: 500;  
     padding-top: 120px;
     padding-bottom: 90px;
 }
@@ -443,7 +443,7 @@ main {
     }
 
 
-    .service-section .container .section-border .umb-block-list .service-boxes  i{
+    .service-section .container .section-border .umb-block-list .service-boxes i {
         font-size: 25px;
         margin-bottom: 20px;
     }
@@ -568,7 +568,8 @@ main {
         padding: 20px 0px 0px 0px;
     }
     .service-section .container .service-boxes .service-box:hover {
-        background-color: #F90783;
+        background-color: #F90783; 
+        
     }
     .service-section .container .service-boxes .browse-services {
         padding: 50px 0px;
@@ -619,12 +620,14 @@ main {
                         align-items: center;
                         justify-content: center;
                         grid-area: img;
+                        color: #191919;
                     }
                     .chooseus-section .container .content-column ul li h5 {
                         font-family: "DM Sans", sans-serif;
                         font-size: 22px;
                         font-weight: 700;
                         grid-area: title;
+                        color: #191919;
                     }
                     .chooseus-section .container .content-column ul li p {
                         font-family: "Inter", sans-serif;
@@ -858,7 +861,7 @@ main {
     .testimonial-section .container .section-border {
         margin: -50px -90px;
         padding: 120px 80px;
-        background-color: #F9D783;
+        background-color: #FFFFFF;
     }
 
         .testimonial-section .container .section-border .section-title {
@@ -884,12 +887,12 @@ main {
         text-align: left;
     }
         .testimonial-section .container .section-border .testimonials .testimonial i {
-            color: #F9D783;
+            color: #f9401C;
         }
 
         .testimonial-section .container .section-border .testimonials .testimonial .rating {
             margin: 20px 0;
-            color: #F9D783;
+            color: #FFFFFF;
         }
 
         .testimonial-section .container .section-border .testimonials .testimonial .writer {
@@ -937,8 +940,14 @@ main {
     padding: 60px 0 60px 0;
 }
 
-    .article-section .container section-title {
+    .article-section .container .section-title {
         margin-bottom: 15px;
+    }
+    .article-section .container section-title h2 {
+        flex: 1;
+        font-family: "DM Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 700;
     }
 
     .article-section .container browse-news {
@@ -975,7 +984,7 @@ main {
                 position: absolute;
                 left: 30px;
                 top: 30px;
-                background-color: #F00082;
+                background-color: #F9D783;
                 height: 64px;
                 width: 56px;
                 display: flex;
@@ -1082,8 +1091,39 @@ main {
         font-size: 45px;
         font-weight: 700;
     }
+.subscribe-section {
+    padding: 60px 0 60px 0;
+    color: rgba(25, 25, 25, 0.1)
+}
+
+    .subscribe-section .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+        .subscribe-section .container .breadcrumb a {
+            color: #191919;
+            text-decoration: none;
+        }
+
+            .subscribe-section .container .breadcrumb a:hover {
+                text-decoration: underline;
+            }
+
+ 
+
+        .subscribe-section .container h2 {
+            flex: 1;
+            font-family: "DM Sans", sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+
 .contactinfo-section {
-    padding: 80px 0 0 0 ;
+    padding: 80px 0 0 0;
 }
     .contactinfo-section .container {
         padding: 0;
