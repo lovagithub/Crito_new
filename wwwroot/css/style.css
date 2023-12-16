@@ -409,7 +409,7 @@ main {
     gap: 50px;
 }
 
-.feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box  i {
+.feature-section .container .section-border .feature-grid .feature-boxes .umb-block-list .feature-box i {
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -418,58 +418,6 @@ main {
         font-size: 22px;
         font-weight: 700;
     }
-.choose-section {
-    padding: 60px 0;
-}
-
-    .choose-section .container .section-border {
-        margin: -50px -90px;
-        padding: 80px .80px;
-        border: 1px solid rgba(25, 25, 25, 0.1);
-    }
-
-        .choose-section .container .section-border .project-and-cases {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0px;
-        }
-
-            .choose-section .container .section-border .project-and-cases .feature-learnmore {
-                margin-right: 30%;
-            }
-                .choose-section .container .section-border .project-and-cases .feature-learnmore img {
-                    height: 307px;
-                    width: 100%;
-                    -o-object-fit: cover;
-                    object-fit: cover;
-                }
-
-
-                .choose-section .container .section-border .project-and-cases .feature-learnmore h2 {
-                    font-size: 45px;
-                    font-weight: 700;
-                    margin-bottom: 30px;
-                }
-
-                .choose-section .container .section-border .project-and-cases .feature-learnmore a {
-                    display: flex;
-                }
-
-            .choose-section .container .section-border .project-and-cases .feature-boxes .umb-block-list {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 50px;
-            }
-
-                .choose-section .container .section-border .project-and-cases .feature-boxes .umb-block-list .feature-box i {
-                    font-size: 25px;
-                    margin-bottom: 20px;
-                }
-
-                .choose-section .container .section-border .project-and-cases .feature-boxes .umb-block-list .feature-box h2 {
-                    font-size: 22px;
-                    font-weight: 700;
-                }
 
 .service-section {
     padding: 60px 0;
@@ -899,18 +847,18 @@ main {
     }
 
 .testimonial-section {
-                    text-align: center;
-                    background-color: #F00082;
-                    position: relative;
-                    z-index: 0;
-                    padding: 60px 0 0px 0;
-                    padding-bottom: 120px;
-                }
+    text-align: center;
+    background-color: #F9D783;
+    position: relative;
+    z-index: 0;
+    padding: 60px 0 0px 0;
+    padding-bottom: 120px;
+}
 
     .testimonial-section .container .section-border {
-         margin: -50px -90px;
-         padding: 120px 80px;
-         background-color: #FFFFFF;
+        margin: -50px -90px;
+        padding: 120px 80px;
+        background-color: #F9D783;
     }
 
         .testimonial-section .container .section-border .section-title {
@@ -935,10 +883,13 @@ main {
     .testimonial-section .container .section-border .testimonials .testimonial {
         text-align: left;
     }
+        .testimonial-section .container .section-border .testimonials .testimonial i {
+            color: #F9D783;
+        }
 
         .testimonial-section .container .section-border .testimonials .testimonial .rating {
             margin: 20px 0;
-            color: #F94D1C;
+            color: #F9D783;
         }
 
         .testimonial-section .container .section-border .testimonials .testimonial .writer {
@@ -972,13 +923,13 @@ main {
                 font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-weight: 400;
-                color: #F94D1C;
+                color: #F9D783;
             }
-
-.testimonial-section .container .section-border a {
-    display: inline-block;
-    margin: 50px 0 0 0;
-}
+     
+                .testimonial-section .container .section-border a {
+                    display: inline-block;
+                    margin: 50px 0 0 0;
+                }
 
 .article-section {
     position: relative;
