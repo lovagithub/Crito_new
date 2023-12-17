@@ -418,46 +418,48 @@ main {
         font-size: 22px;
         font-weight: 700;
     }
-
+/*
 .service-section {
     padding: 60px 0;
    
 }
-
 .service-section .container {
         display: flex;
         justify-content: center;
       
     }
 
-.service-section .container .section-border {          
-            margin: -50px -90px;
-            padding: 80px 80px;
-            border: 1px solid rgba(25, 25, 25, 0.1);
-        }
+    .service-section .container .section-border {
+        margin: -50px -90px;
+        padding: 80px 80px;
+        border: 1px solid rgba(25, 25, 25, 0.1);
+    }
 
-    .service-section .container .section-border .umb-block-list .service-boxes {
+    .service-section .container .section-border .section-title .umb-block-list .service-boxes {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
 
 
-    .service-section .container .section-border .umb-block-list .service-boxes i {
-        font-size: 25px;
-        margin-bottom: 20px;
+        .service-section .container .section-border .section-title .umb-block-list .service-boxes i {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .service-section .container .section-border .section-title .umb-block-list .service-boxes h2 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .service-section .container .section-border .section-title .umb-block-list .service-boxes a {
+            font-size: 22px;
+            font-weight: 700;
+        }
+    .service-section .container .section-border .section-title umb-block-list .service-boxes:hover {
+        background-color: #F9D783;
     }
 
-    .service-section .container .section-border .umb-block-list .service-boxes h2 {
-        font-size: 22px;
-        font-weight: 700;
-    }
-    .service-section .container .section-border .umb-block-list .service-boxes a {
-        font-size: 22px;
-        font-weight: 700;
-    }
-
-
+ */
 .about-section {
     padding: 60px 0;
 }
@@ -519,6 +521,7 @@ main {
     .about-section .container .content-column .about-links a {
         margin-right: 20px;
     }
+
 .service-section {
     color: #191919;
     background-color: #F0EFF9;
@@ -539,50 +542,50 @@ main {
     .service-section .container .service-boxes {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        align-items: center;
+        padding-bottom: 40px;
+        background-color: #F0EFF9;
     }
-    .service-section .container .service-boxes .service-box {
-        padding: 30px;
-        background-color: #FFFFFF;
-        transition: all 0.15s ease-in-out;
-    }
-    .service-section .container .service-boxes .service-box .line {
-        background-color: #191919;
-        width: 40px;
-        height: 2px;
-        margin-bottom: 30px;
-    }
-    .service-section .container .service-boxes .service-box h4 {
-        font-family: "DM Sans", sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-    }
-    .service-section .container .service-boxes .service-box p {
-        font-family: "Inter", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .service-section .container .service-boxes .service-box .service-box-links {
-        display: flex;
-        justify-content: flex-end;
-        padding: 20px 0px 0px 0px;
-    }
-    .service-section .container .service-boxes .service-box:hover {
-        background-color: #F90783; 
-        
-    }
-    .service-section .container .service-boxes .browse-services {
-        padding: 50px 0px;
-        display: flex;
-        justify-content: center; 
-    }
-   
-
-        .chooseus-section {
-            position: relative;
-            z-index: 0;
-            padding: 60px 0 0 0;
+        .service-section .container .service-boxes .umb-block-list .service-box {
+            padding: 30px;
+            background-color: #FFFFFF;
+            transition: all 0.15s ease-in-out;
         }
+            .service-section .container .service-boxes .umb-block-list .service-box .line {
+                background-color: #191919;
+                width: 40px;
+                height: 2px;
+                margin-bottom: 30px;
+            }
+            .service-section .container .service-boxes .umb-block-list .service-box h4 {
+                font-family: "DM Sans", sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                text-align: center;
+            }
+            .service-section .container .service-boxes .umb-block-list .service-box p {
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+            }
+            .service-section .container .service-boxes .umb-block-list .service-box .service-box-link {
+                display: flex;
+                padding: 20px 0px 0px 0px;
+                text-align: center;
+                justify-content: center;
+            }
+            .service-section .container .service-boxes .umb-block-list .service-box:hover {
+                background-color: #F9D783;
+            }
+    
+
+
+.chooseus-section {
+    position: relative;
+    z-index: 0;
+    padding: 60px 0 0 0;
+}
     .chooseus-section .container {
         display: flex;
         justify-content: space-between;
@@ -659,9 +662,7 @@ main {
         justify-content: space-between;
     }
 
-        .repair-section .container .section-title {
-            margin-bottom: 15px;
-        }
+       
 
         .repair-section .container h2 {
             font-family: "DM Sans", sans-serif;
@@ -669,11 +670,16 @@ main {
             font-weight: 700;
             margin-bottom: 45px;
         }
-        .repair-section .container h5 {
+        .repair-section .container .section-title {
+            margin-bottom: 15px;
+        }
+        .repair-section .container .section-title h5 {
             font-family: "DM Sans", sans-serif;
             font-size: 15px;
             font-weight: 400;
             margin-bottom: 45px;
+            color: #191919;
+           
         }
 
         .repair-section .container .content-column {
@@ -926,7 +932,7 @@ main {
                 font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-weight: 400;
-                color: #F9D783;
+                color: #f9401C;
             }
      
                 .testimonial-section .container .section-border a {
@@ -1091,35 +1097,31 @@ main {
         font-size: 45px;
         font-weight: 700;
     }
+
 .subscribe-section {
-    padding: 60px 0 60px 0;
-    color: rgba(25, 25, 25, 0.1)
+    position: relative;
+    background-color: #f0f0f0; 
+    padding: 120px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.background-wavy-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
 }
 
-    .subscribe-section .container {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
+.subscribe-section .container .section-title-subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-section .container .section-title-subscribe h2 {
+        margin-right: 100px; 
     }
-
-        .subscribe-section .container .breadcrumb a {
-            color: #191919;
-            text-decoration: none;
-        }
-
-            .subscribe-section .container .breadcrumb a:hover {
-                text-decoration: underline;
-            }
-
- 
-
-        .subscribe-section .container h2 {
-            flex: 1;
-            font-family: "DM Sans", sans-serif;
-            font-size: 45px;
-            font-weight: 700;
-        }
+   
 
 
 .contactinfo-section {
